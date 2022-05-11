@@ -2,7 +2,7 @@
 Ecommerce Project submission
 
 CSS validation
-![Css validation] (validation/cssEcommerce.png)
+![Css validation] (/validation/cssEcommerce.png)
 
 
 
