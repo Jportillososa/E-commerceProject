@@ -39,6 +39,31 @@ html {
   color: rgb(244, 166, 48);
 }
 
+.brand-title3 {
+  font-size: .8rem;
+  justify-content: left;
+  font-family: 'Parisienne', cursive;
+  color: blanchedalmond;
+  font-family: 'the nautigal', cursive;
+  height: 650px;
+  position: absolute;
+  bottom: 10%;
+  left: 1.5vw;
+  height: 50%;
+
+}
+
+.brand-title4 {
+  font-size: 1rem;
+  text-align: left;
+  justify-content: left;
+  font-family: 'Parisienne', cursive;
+  color: rgb(244, 166, 48);
+
+}
+
+
+
 li {
   list-style: none;
 }
