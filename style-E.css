@@ -1,199 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body,html
- {
-   display:flex;
-   flex-direction:column;
-    margin: 0;
-    height: 120vh; 
-    width: 100%;
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 120vh;
+  width: 100%;
 }
 
 /*  NAVIGATION BAR STARTS HERE*/
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.0);
-    color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: blanchedalmond;
 }
+
 /* THIS IS THE LOGO */
 .brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-    justify-content: center;
+  font-size: 1.5rem;
+  margin: .5rem;
+  justify-content: center;
 }
+
 /* LINKS TO NAV */
 .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .navbar-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .navbar-links li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: block;
 }
 
 .navbar-links li:hover {
-    background-color: rgb(127, 45, 61);
+  background-color: rgb(127, 45, 61);
 }
+
 /*BUTTON THATS MOBILE RESPONCIVE  */
 .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
   cursor: pointer;
 
 }
 
 .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: rgb(148, 207, 255);
-    border-radius: 10px;
-  
+  height: 3px;
+  width: 100%;
+  background-color: rgb(148, 207, 255);
+  border-radius: 10px;
+
 }
 
 /*  @ MEDIA ALLOWS DISPLAY TO BE BETTER ACCESSIBLE FOR SMALLER SCREENS*/
 @media screen and (max-width: 800px) {
-    .toggle-button {
-        display: flex;
-    }
+  .toggle-button {
+    display: flex;
+  }
 
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    .navbar-links li {
-        text-align: center;
-    }
+  .navbar-links li {
+    text-align: center;
+  }
 
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
 
-    .navbar-links.active {
-        display: flex;
-    }
+  .navbar-links.active {
+    display: flex;
+  }
 
 }
 
 
 
 .hero-image {
-    background-image: linear-gradient(rgba(4, 9, 0, 0.1), rgba(4, 9, 0, 0.8)), url("electric.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-color: black;
-    border-bottom: 5px solid #030303;
+  background-image: linear-gradient(rgba(4, 9, 0, 0.1), rgba(4, 9, 0, 0.8)), url("electric.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+  border-bottom: 5px solid #030303;
 }
 
 .hero-image2 {
-    background-image: linear-gradient(rgba(4, 9, 0, 0.1), rgba(4, 9, 0, 0.8)), url("images/blueguitar.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-color: black;
-    border-bottom: 5px solid #030303;
+  background-image: linear-gradient(rgba(4, 9, 0, 0.1), rgba(4, 9, 0, 0.8)), url("images/blueguitar.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+  border-bottom: 5px solid #030303;
 }
 
 /*--------CONTAINER FOR PRODUCTS IN FLEX */
 
 /* flex container */
 .product-filter {
-    display: flex;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 
 }
 
 .product-filter h1 {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .sort {
-    display: flex;
+  display: flex;
 }
 
 .collection-sort {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
 
 
 .product-card {
-    padding: 2%;
-    flex-grow: 1;
-    flex-basis: 16%;
-    border: 2px solid black;
-    display: flex;
-    /* so child elements can use flexbox stuff too! */
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  border: 2px solid black;
+  display: flex;
+  /* so child elements can use flexbox stuff too! */
 }
 
 .product-image img {
-    max-width: 100%;
-    /* padding: 1%; */
-    padding-bottom: 35%;
-    min-width: 100px;
+  max-width: 100%;
+  /* padding: 1%; */
+  padding-bottom: 35%;
+  min-width: 100px;
 
 }
+
 /* DESCRIPTION AND PRICE */
 .product-info {
-    margin-bottom: auto;
-    text-align: center;
-    position: sticky;
-    top: 100%;
+  margin-bottom: auto;
+  text-align: center;
+  position: sticky;
+  top: 100%;
 }
 
 @media (max-width: 920px) {
-    .product-card {
-        flex: 1 21%;
-    }
+  .product-card {
+    flex: 1 21%;
+  }
 }
+
 /* THIS IS INCASE I WANT TO SET THE FIRST TWO ITEMS TO APPEAR LARGER THAN THE REST */
 
 
@@ -206,20 +211,20 @@ body,html
 
 /* FLEX 1 SETS TO BE ONLY ONE COLUMN AT 600PX */
 @media (max-width: 600px) {
-    .product-card {
-        flex: 1 46%;
-    }
+  .product-card {
+    flex: 1 46%;
+  }
 }
 
 
 @media (max-width: 480px) {
-    .product-filter {
-        flex-direction: column;
-    }
+  .product-filter {
+    flex-direction: column;
+  }
 
-    .sort {
-        align-self: flex-start;
-    }
+  .sort {
+    align-self: flex-start;
+  }
 }
 
 
@@ -229,16 +234,17 @@ body,html
 .contact-container {
   position: relative;
   display: flex;
-  justify-content:center;
-  align-items:center;
-  width:100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100%;
   padding: 5px 40px;
-  
- 
- 
-    
+
+
+
+
 }
+
 /* THIS IS TO MAKE THE BACKGROUND BLURRY BUT I TOOK THIS FEATURE OUT */
 
 /* .contact-container:after{
@@ -256,148 +262,157 @@ body,html
 
 
 /* THIS IS THE FORM BOX */
-.contact-box{
-  max-width:800px;
+.contact-box {
+  max-width: 800px;
   display: grid;
-  grid-template-columns:repeat(2, 1fr);
-  justify-content:center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   align-items: center;
-  text-align:center;
+  text-align: center;
   background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0 , 0, 0 , 0.19);
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
 }
+
 /* THIS IS FOR THE DIV ON THE LEFT (IMG) */
-.left{
-  height:100%;
+.left {
+  height: 100%;
   background: url("images/concert.webp") no-repeat center;
-  background-size:cover;
+  background-size: cover;
 }
+
 /* FOR DIV ON RIGHT */
-.right{
+.right {
   padding: 25px 40px;
 }
 
-h2{
-  position:relative;
+h2 {
+  position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
-h2:after{
+h2:after {
   content: '';
   position: absolute;
   left: 50%;
-  bottom:0;
+  bottom: 0;
   transform: translateX(-50%);
   height: 4px;
-  width:50px;
-  border-radius:2px;
-  background-color:#2ec771;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #2ec771;
 }
 
-.field{
+.field {
   width: 100%;
   padding: 0.5rem 1rem;
-  outline:none;
+  outline: none;
   border: 2px solid rgba(0, 0, 0, 0);
   background-color: rgba(230, 230, 230, 0.6);
   font-size: 1.1rem;
-  margin-bottom:22px;
+  margin-bottom: 22px;
   transition: .3s;
 }
-.field:hover{
+
+.field:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.field:focus{
-  background-color:#fefefe;
-  border: 2px solid rgba( 30, 85, 250, 0.47);
-  
+.field:focus {
+  background-color: #fefefe;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+
 }
 
-.area{
-  min-height:100px;
+.area {
+  min-height: 100px;
 }
 
-.btn{
-  width:100%;
+.btn {
+  width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   background-color: #000000;
-  cursor:pointer;
-  color:#fff;
+  cursor: pointer;
+  color: #fff;
   outline: none;
   border: none;
   transition: .3s;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: #444444;
 }
+
 /* THIS IS TO MAKE FORM MOBILE FRIENDLY WHICH DOES WORK! */
-@media screen and (max-width:400px){
-  .contact-box{
+@media screen and (max-width:400px) {
+  .contact-box {
     grid-template-columns: 1fr;
-    
+
   }
-  .left{
+
+  .left {
     height: 200px;
   }
-/*   .contact-container{
+
+  /*   .contact-container{
     padding-left:10px;
     padding-right:10px;
    
   } */
- 
 
-  
+
+
 }
-@media screen and (min-width:1500px){
-  .contact-box{
+
+@media screen and (min-width:1500px) {
+  .contact-box {
     grid-template-columns: 1fr;
-   
+
   }
-  .left{
+
+  .left {
     height: 200px;
   }
- .contact-container{
-   position:relative;
-   padding-top:-30vh;
-   padding-bottom:50vh;
- }
 
- 
-} 
+  .contact-container {
+    position: relative;
+    padding-top: 30vh;
+    padding-bottom: 50vh;
+  }
+
+
+}
 
 
 /* FOOTER/LOGOS */
-footer, #logos{
-  
-    text-align: center;
-    background-color: black;
-    opacity: 1;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 5vh;
-  
-  
+footer,
+#logos {
+
+  text-align: center;
+  background-color: black;
+  opacity: 1;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+
+
 }
 
 #logos {
-    
-    background-color: black;
-    opacity: 1;
-    color: white;
-    position: relative;
-    bottom: 0vh;
-    width: 100%;
-    height: 5vw;
+
+  background-color: black;
+  opacity: 1;
+  color: white;
+  position: relative;
+  bottom: 0vh;
+  width: 100%;
+  height: 5vw;
 }
 
 
 .ig {
-    padding-top: .5vw;
-    margin-right: 1.8vw;
-
-}
+  padding-top: .5vw;
+  margin-right: 1.8vw;
