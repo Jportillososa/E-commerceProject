@@ -14,6 +14,44 @@ html {
 }
 
 
+/*BUTTON STARTS HERE*/
+.button {
+  font-family: 'Fredoka', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 1.8vw;
+  padding: 5px 0px;
+  border: .3vw;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: white;
+  color: rgb(244, 166, 48);
+  ;
+  border: .3vw;
+  border-style: solid;
+  border-color: rgb(244, 166, 48, 0.6);
+  ;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.button:link {
+  text-decoration: none;
+  /*REMOVES UNDERLINE DECORATION*/
+}
+
+.button:visited {
+  text-decoration: none;
+  color: black;
+}
 
 /*  NAVIGATION BAR STARTS HERE*/
 .navbar {
